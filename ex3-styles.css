@@ -1,0 +1,111 @@
+/*
+colour platette 
+32ED5F
+
+divide strips
+FFEABD
+*/
+
+body{
+    background: #32ED5F; 
+    font-family: arial, helvetica, "helvetica, neru" sans-serif;
+}
+/*layout rules*/
+nav{
+    border-bottom: #ffeabd solid 15px;
+    width: 90%;
+    margin: 0 auto;
+    height: 111px;
+}
+div{
+    background: #BFFCF9;
+    width 70%;
+    min-height: 450px;
+    padding: 1%;
+    margin: 0 auto;
+    clear: both;
+}
+
+/*
+generic link style
+*/
+a{
+    font-weight: bold
+}
+
+a:link{
+    color: aliceblue;
+    text-decoration: underline;
+}
+
+a:visited{
+    color: #669698;
+    text-decoration: overline underline;
+    
+}
+
+a:active{
+    color: chocolate;
+    text-decoration: overline;
+    text-decoration-color: forestgreen;
+}
+
+/* primary nav rules*/
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    top: 10px;
+    left: 50%;
+    margin-left: -222px
+}
+
+nav ul li{
+    width: 148px;
+    height: 111px;
+    background: url(ex3-btm-default.gif) no-repeat;
+    float: left;
+}
+
+nav ul li a {
+    color: #BFFCF9;
+    font-size: 2em;
+    display: block;
+    padding-top: 40px;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+nav ul li a:link, nav ul li a:visited{
+    color: #32ed5f;
+    text-decoration: none;
+}
+
+nav ul li a:hover, nav ul li a:active{
+    color: #0078FF;
+    background: none;    
+}
+
+nav ul li:hover{
+    background: url(ex3-btm-hover.gif); 
+    float: left
+    
+}
+
+nav ul li.current{
+    background: url(ex3-btm-current.gif);
+    
+}
+
+nav ul li.current a{
+    color: #BFFCF9
+}
+
+
+
+
+
+
+
+

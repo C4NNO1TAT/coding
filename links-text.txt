@@ -1,0 +1,43 @@
+
+Navigation
+
+Global navigation
+
+Global nav, also referred to as primary nav allows users to access main content areas from anywhere (globally) within the site.
+
+Critical for usability, keep nav consistent in layout, structure and organisation;
+Nav system must be obvious and provide visual cues to orientate user;
+Nav must eliminate the user having to use browser back button.
+Local navigation
+
+Local nav, also referred to as secondary nav provides access to content that is relevant only to a particular section.
+
+Must be clearly distinguishable as separate from the primary nav (nav hierarchy);
+Must also provide visual cues (ie that links are clickable and which is the currently active one).
+Creating links
+
+Page links
+
+Links to another place within the same page. To create use a named attribute (eg id="top"). Assign any value using alpha-numeric characters, but must start with a letter an do not use spaces. Names must be unique (ie never repeat the same name). Then in the <a> tag (anchor) use the href property to call up this named id (eg a href="#top"), remembering to include a # at the start.
+
+For example go to top
+
+Internal links
+
+Links to another page within the same site on the same server. In the href property specify the directory route and the doc being linked to. Use ../ to move up a folder level within the site root. The site root is the folder that the entire website originates from.
+
+For example link to content in another folder within root href="../ex2/ex2.html" See exercise 2, link to content in same folder href="ex3-pg2.html" See go to ex3 page 2; link to home page dircetly in site root
+
+External links
+
+Link to another page in a different website and/or server. It is sometimes considered good practice if moving user to whole new site to open a new browser window/tab; but make this clear to the user as constantly opening additional tabs causes screen/browser clutter and this can detract from usability. Reasons for opening a new tab are: maintains access to current site, considered good manners let user know the site is totally new. To open a new bowser window use target property and value "_blank". In href specify full url.
+
+For example visit the Griffith Uni site.
+
+Styling links
+
+Default link styling is blue colour plus underline, and purple colour for links after visiting. Use CSS to alter the defaults—keeping in mind useability at all times. Use pseudo classes to establish various visual presentations to aid useability (eg a:link a:visited a:hover a:active). Due to the cascading nature of CSS, which means one style could overwrite a previous one the links style must be written in the following order: link, visited, hover, active). Pseudo classes are attached with : (colon) and are so called because nothing in the html invokes the style but rather the actions of the user. Regular classes (eg a.current a.youarehere) are not specific terms and can be custom named to suit purpose and are attached by . (fullstop) in CSS.
+
+Styling nav buttons
+
+When using ul for nav buttons, the default block level (vertical) arrangement may be altered to horizontal. Use floats to place li items side by side (eg float: left;). Floating positions the element where it should be in normal flow then places it as far left or right as possible, and takes it out of normal flow in as much as following elements that are block-level ignore the float but inline content will wrap around it. Use a clear property on elements that need to skip clear of the float and resume normal flow (eg clear: left; clear: right; clear: both;). Floated elements become shrinkwrapped (ie container is only as large as the content); so must be given dimension.

@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<title>Allen CSS exercise</title>
+    <link href="ex2-style.css" type="text/css" rel="stylesheet" >
+
+</head>
+<body>
+    <p class="logo"><img src="ex2logo.jpg" alt="css"></p>
+    <div style="color: #a30020">
+    <h1>Visual Presentaion: Importance and Methods</h1>
+
+    <h2>Benefits of visual presentation</h2>
+<ul>
+    <li>Creates interest and appeal</li>
+    
+    <li>Layout and arrangement (ie assemble similar or related elements together)to help clarify the information. Consider user experience (UX)</li> 
+    <li>Colour and graphics can help define the hierarchy and improve the overall communication.</li>
+     </ul>
+<h2>Establishing visual presentation</h2>
+   <ul>
+       <li>Use css stylesheets</li>
+       <li>Use logical and semantic html tags to constructlayout/organisation</li>
+       <li>Use graphics and imagery (ensure images are web-optimised)</li>
+       <li>Use colour</li>
+    </ul>
+    
+    <h3>CSS Styles</h3>
+<p style="color: chocolate">
+    Styles can be placed in the head of the document in a &lt;style&gt; however a better option is to place styles in a linked stylesheet. By linking the stylesheet document you can link this to several pages. Benefits of linking are: <strong>global edits</strong> <em>(only have to edit in one place to globally update all web pages)</em>; <strong>work efficiency</strong> (eliminates repetitive markup); <strong>overall consistency</strong>. To link styles, use a void tag (self-closing tag) of link with 3 properties:   <strong>href</strong> (hypertext reference calling up the actual css document), <strong>type</strong> (expresses what markup syntax and language the browser needs to interpret eg text/css), <strong>rel</strong> (relation as to how the stylesheet relates to the html doc).
+    </p>
+    <h3>Constructing layout</h3>
+<p>
+Use sematic tags that describe the purpose for logical areas of content to organise the page (eg aside, header, footer, div), then use css styles to construct meaningful and organised layout. Do not use tables to construct layout, tables must be used for tabular data only.
+    </p>
+        <h3>Creating graphics</h3>
+<p>
+Use Photoshop and Illustrator to design, refine and develop graphics and page layout. Make use of the "Save for Web" options to optimise images for web use (reduce file size). Pixels use a lot of memory, making files large wich slow page load and add to data cost, so limit use of pixels wherever possible. Done by cropping image as tight as possible and describing colour with css.
+        </p>
+<p>
+<strong>JPG</strong> - reduces image by using lossey compression. Drawback of lossey means loses data so image quality is compromised. Here consider carefully acceptable visual quality with amount of file size reduction. Supports millions of colours.
+        </p>
+<p>
+<strong>GIF</strong> - reduces image by limiting number of colours. Maximum colours are 256, so a colour table is indexed using colour reduction algoritms. Eg Perceptual (colours selected from image but favouring those more readily perceived by the human eye); Adaptive (colours taken from image but favouring those that provide consistency like web-safe colours), Selective (similar to perceptual but favours broad areas of colour found in the image). Supports transparency albeit non-variable (ie a pixel is ether 0% transparent or 100% opaque)
+        </p>
+<strong>PNG</strong> - reduces image by lossless compression. No loss of data, so no image quality compromise. Drawback is file sizes are much larger than jpg, gif. Generally use png files where image dimension are small eg graphic user interface elements like buttons. Supports variable transparency.
+
+<h3>Colour</h3>
+<p>
+Use hexadecimal notation to describe colour. Colour preced with a # and then two values for each of the rgb components.
+    <br>
+eg red #ff0000, if values are equivalent for each rgb then shortcode can be used like #f00
+        </p>
+<p>
+Colours can also be written in rgb notation. To spcify use rgb then in brackets add values upto 255 for each colour separated by commas. 
+<br>
+eg Green rgb(0,255,0)
+        </p>
+<p>
+Transparency can be defined as an alpha channel, so specify the a value as transparency where the maximum level is 1 (fully opaque - no transparency). 
+<br>
+eg 50% Blue rgba(0,0,255,0.5)
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+/*
+
+Style sheet for Allen Qian's journal websie
+Author Allen Qian
+Date: 07 Dec 2018
+Version: 1 (mid point)
+
+*/
+
+body {
+    font-family: "Ink free", sans-serif;
+    
+}
+
+/*typograph rules*/
+
+h1{
+    font-family: bold;
+    font-size: 3em
+}
+
+
+/*generic class rule for images
+class:"image-border"
+*/
+
+.image-border{
+    border: #000 solid: 1px
+}
+

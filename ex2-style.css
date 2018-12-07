@@ -1,0 +1,30 @@
+/*
+color palette
+Sakura #ffcfee
+index.html
+skills.html
+*/
+
+
+
+body {
+    background:#1b1464 url(ex2-bg-rep.jpg) repeat-x 0px 400px;
+}
+
+div {
+    background: #ffcfee;
+    width: 70%;
+    padding: 15px 1% 10px 1%;
+    border: #000 solid 10px;
+    border-radius: 35px;
+    border-color: #3bf6ff;
+    margin: 10px auto 15px auto;
+    font-family: monospace;
+    font-style: oblique;
+    font-size: 14px;
+}
+
+.logo{ 
+    text-align: center;
+    image-resolution: from-image;
+}
